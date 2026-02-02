@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
-# sssssSSSSSSet working directory in the container
+# SsssssSSSSSSet working directory in the container
 WORKDIR /var/www/html
 
 # Copy website files to the container

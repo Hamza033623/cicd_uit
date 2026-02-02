@@ -30,7 +30,7 @@ jobs:
             🔹 Target Branch: main
 
             Please review and approve the changes.
-          pr_assignee: "Hamza033623"
+#          pr_assignee: "Hamza033623"
           pr_label: "auto-pr"
           pr_allow_empty: true
           github_token: ${{ secrets.TOKEN }}

@@ -27,6 +27,8 @@ jobs:
           # Go to deployment directory
           cd /var/www/html/businesslogodesign-dockerkube
 
+           git config --global --add safe.directory /var/www/html/businesslogodesign-dockerkube
+
           # Save last successful commit
           LAST_COMMIT=$(git rev-parse HEAD)
           echo $LAST_COMMIT > .last_commit

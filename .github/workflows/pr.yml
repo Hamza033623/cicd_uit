@@ -18,7 +18,7 @@ jobs:
         id: create_pr
         uses: diillson/auto-pull-request@v1.0.1
         with:
-          source_branch: ""                        # current branch
+          source_branch: ""   # current branch
           destination_branch: "main"
           pr_title: "Pulling ${{ github.ref_name }} into main"
           pr_body: |
@@ -26,11 +26,11 @@ jobs:
 
             This pull request was created automatically by GitHub Actions.
 
-            🔹 Source Branch: `${{ github.ref_name }}`
-            🔹 Target Branch: `main`
+            🔹 Source Branch: ${{ github.ref_name }}
+            🔹 Target Branch: main
 
             Please review and approve the changes.
-          pr_assignee: "tyfora100"
+          pr_assignee: "Hamza033623"
           pr_label: "auto-pr"
           pr_allow_empty: true
           github_token: ${{ secrets.TOKEN }}
@@ -58,6 +58,5 @@ jobs:
 
             Review & approve here:
             https://github.com/${{ steps.repo_info.outputs.repo }}/pull/${{ steps.create_pr.outputs.pull-request-number }}
-
           to: hamza.ali@voxtrongroup.com
           from: hamzashaikhali20@gmail.com
